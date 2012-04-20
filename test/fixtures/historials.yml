@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id_externo: MyString
+  fecha: 2012-04-20
+  cliente_id: 1
+  medico_id: 1
+
+two:
+  id_externo: MyString
+  fecha: 2012-04-20
+  cliente_id: 1
+  medico_id: 1

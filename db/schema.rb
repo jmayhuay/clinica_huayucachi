@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120420174458) do
+ActiveRecord::Schema.define(:version => 20120420222012) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -56,6 +56,54 @@ ActiveRecord::Schema.define(:version => 20120420174458) do
     t.date     "ultima_historia"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+  end
+
+  create_table "enfermedads", :force => true do |t|
+    t.string   "descripcion"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "historia", :force => true do |t|
+    t.string   "id_externo"
+    t.date     "fecha"
+    t.integer  "cliente_id"
+    t.integer  "medico_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "historia_enfermedads", :force => true do |t|
+    t.integer  "historia_id"
+    t.integer  "enfermedad_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "historials", :force => true do |t|
+    t.string   "id_externo"
+    t.date     "fecha"
+    t.integer  "cliente_id"
+    t.integer  "medico_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "medicamentos", :force => true do |t|
+    t.string   "descripcion"
+    t.string   "dosis"
+    t.integer  "historia_enfermedad_id"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
+  end
+
+  create_table "medicos", :force => true do |t|
+    t.integer  "dni"
+    t.string   "nombres"
+    t.string   "apellidos"
+    t.integer  "celular"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

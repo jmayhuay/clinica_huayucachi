@@ -1,0 +1,29 @@
+<h1>Listing historials</h1>
+
+<table>
+  <tr>
+    <th>Id externo</th>
+    <th>Fecha</th>
+    <th>Cliente</th>
+    <th>Medico</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @historials.each do |historial| %>
+  <tr>
+    <td><%= historial.id_externo %></td>
+    <td><%= historial.fecha %></td>
+    <td><%= historial.cliente_id %></td>
+    <td><%= historial.medico_id %></td>
+    <td><%= link_to 'Show', historial %></td>
+    <td><%= link_to 'Edit', edit_historial_path(historial) %></td>
+    <td><%= link_to 'Destroy', historial, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Historial', new_historial_path %>

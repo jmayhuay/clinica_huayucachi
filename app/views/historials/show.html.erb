@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id externo:</b>
+  <%= @historial.id_externo %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @historial.fecha %>
+</p>
+
+<p>
+  <b>Cliente:</b>
+  <%= @historial.cliente_id %>
+</p>
+
+<p>
+  <b>Medico:</b>
+  <%= @historial.medico_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_historial_path(@historial) %> |
+<%= link_to 'Back', historials_path %>

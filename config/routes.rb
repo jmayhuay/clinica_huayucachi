@@ -1,5 +1,5 @@
 Clinica::Application.routes.draw do
-  resources :historia
+  resources :historials
 
   resources :medicos
 
