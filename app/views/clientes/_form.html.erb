@@ -1,0 +1,45 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dni %><br />
+    <%= f.number_field :dni %>
+  </div>
+  <div class="field">
+    <%= f.label :origen_nombre_mama %><br />
+    <%= f.text_field :origen_nombre_mama %>
+  </div>
+  <div class="field">
+    <%= f.label :nombres %><br />
+    <%= f.text_field :nombres %>
+  </div>
+  <div class="field">
+    <%= f.label :apellidos %><br />
+    <%= f.text_field :apellidos %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha_nacimiento %><br />
+    <%= f.date_select :fecha_nacimiento %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br />
+    <%= f.number_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :ultima_historia %><br />
+    <%= f.date_select :ultima_historia %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

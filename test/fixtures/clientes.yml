@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dni: 1
+  origen_nombre_mama: MyString
+  nombres: MyString
+  apellidos: MyString
+  fecha_nacimiento: 2012-04-20
+  celular: 1
+  ultima_historia: 2012-04-20
+
+two:
+  dni: 1
+  origen_nombre_mama: MyString
+  nombres: MyString
+  apellidos: MyString
+  fecha_nacimiento: 2012-04-20
+  celular: 1
+  ultima_historia: 2012-04-20

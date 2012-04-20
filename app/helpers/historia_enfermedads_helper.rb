@@ -1,0 +1,2 @@
+module HistoriaEnfermedadsHelper
+end

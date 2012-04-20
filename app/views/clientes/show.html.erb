@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Dni:</b>
+  <%= @cliente.dni %>
+</p>
+
+<p>
+  <b>Origen nombre mama:</b>
+  <%= @cliente.origen_nombre_mama %>
+</p>
+
+<p>
+  <b>Nombres:</b>
+  <%= @cliente.nombres %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @cliente.apellidos %>
+</p>
+
+<p>
+  <b>Fecha nacimiento:</b>
+  <%= @cliente.fecha_nacimiento %>
+</p>
+
+<p>
+  <b>Celular:</b>
+  <%= @cliente.celular %>
+</p>
+
+<p>
+  <b>Ultima historia:</b>
+  <%= @cliente.ultima_historia %>
+</p>
+
+
+<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
+<%= link_to 'Back', clientes_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  descripcion: MyString
+  dosis: MyString
+  historia_enfermedad_id: 1
+
+two:
+  descripcion: MyString
+  dosis: MyString
+  historia_enfermedad_id: 1

@@ -1,0 +1,25 @@
+<%= form_for(@historia_enfermedad) do |f| %>
+  <% if @historia_enfermedad.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@historia_enfermedad.errors.count, "error") %> prohibited this historia_enfermedad from being saved:</h2>
+
+      <ul>
+      <% @historia_enfermedad.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :historia_id %><br />
+    <%= f.number_field :historia_id %>
+  </div>
+  <div class="field">
+    <%= f.label :enfermedad_id %><br />
+    <%= f.number_field :enfermedad_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
